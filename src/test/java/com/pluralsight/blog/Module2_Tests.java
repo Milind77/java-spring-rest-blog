@@ -333,12 +333,12 @@ public class Module2_Tests {
     public void task_7() {
         Method method = null;
         try {
-            method = PostRepository.class.getMethod("findByAuthor_Lastname", String.class);
+            method = PostRepository.class.getMethod("findbyAuthor_LastName", String.class);
         } catch (Exception e) {
             ////e.printStackTrace();
         }
 
-        assertNotNull("Task 5: The method findByAuthor_Lastname(String lastname) doesn't exist in the PostRepository class.", method );
+        assertNotNull("Task 5: The method findByAuthor_LastName(String lastname) doesn't exist in the PostRepository class.", method );
     }
 
     @Test
